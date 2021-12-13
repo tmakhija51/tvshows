@@ -1,0 +1,134 @@
+
+<center>
+<body style="font-family: trattatello" bgcolor="#FCF0CC" text= "#5C7457">
+
+<h1 style="font-size: 85px;"> what i've been up to </h1>
+</body> 
+</center>
+<style>
+
+ .menu-bar {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu-bar > a {
+    color: #5C7457;
+    font-family: trattatello;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .menu-bar > a:hover {
+    color: hsl(160, 70%, 50%);
+    border-bottom: 2px solid hsl(160, 70%, 50%);
+  }
+  
+  @media (max-width: 400px) {
+    .menu-bar {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+.gallery {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    max-width: 630px;
+    margin: 0 auto;
+   	position: relative;
+   	width: 200px;
+    height: 200px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+}
+
+.image {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    max-width: 630px;
+    margin: 0 auto;
+   	position: relative;
+   	width: 200px;
+    height: 200px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+}
+
+.text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: hsl(111, 14%, 56%);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 185px;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+  .gallery:hover .text {
+    visibility: visible;
+    opacity: .7;
+    border: 2px solid hsl(111, 14%, 56%);
+    border-style: inset;
+  }
+
+  @media (max-width: 630px) {
+    .gallery > div {
+      width: calc(33vw - 10px);
+      height: calc(33vw - 10px);
+    }
+  }
+  
+</style>
+
+<nav class="menu-bar">
+  <a href="https://tmakhija51.github.io/final-project/">places i've been</a>
+  <a href="#">what i'm listening to</a>
+  <a href="#">what i'm watching</a>
+  <a href="#">what i'm reading</a>
+</nav>
+
+
+<div class="gallery">
+  <img class="image" src="hozier.jpeg">
+  <p class="text">hozier</p></div>
+<div class="gallery">
+  <img class="image" src="an evening with silk sonic.jpeg">
+  <p class="text">an evening with silk sonic</p></div>
+<div class="gallery">
+  <img class="image" src="scenic drive.jpeg">
+  <p class="text">scenic drive</p></div>
+<div class="gallery">
+  <img class="image" src="twopointfive.jpeg">
+  <p class="text">twopointfive</p></div>
+<div class="gallery">
+  <img class="image" src="solar power.jpeg">
+  <p class="text">solar power</p></div>
+<div class="gallery">
+  <img class="image" src="still over it.jpeg">
+  <p class="text">still over it</p></div>
+<div class="gallery">
+  <img class="image" src="sg8.jpeg">
+  <p class="text">SG8*</p></div>
+<div class="gallery">
+  <img class="image" src="pacifico.jpeg">
+  <p class="text">pacifico</p></div>
+<div class="gallery">
+  <img class="image" src="i like when you shine!.jpeg">
+  <p class="text">i like when you shine!</p></div>
+
